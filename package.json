@@ -1,0 +1,30 @@
+{
+	"name": "ioboard",
+	"version": "1.0.0",
+	"description": "Abstracts interface to firmata firmware",
+	"main": "lib/ioboard.js",
+	"scripts": {
+
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/achingbrain/node-ioboard.git"
+	},
+	"dependencies": {
+
+	},
+	"devDependencies": {
+
+	},
+	"keywords": [
+		"node",
+		"firmata",
+		"servo",
+		"ssc",
+		"maestro"
+	],
+	"author": "Alex Potsides",
+	"license": "BSD",
+	"readmeFilename": "Readme.md",
+	"gitHead": "40fd83648057d380f81d37071e17923cd452bf04"
+}
