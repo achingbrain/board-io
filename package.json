@@ -1,6 +1,6 @@
 {
 	"name": "ioboard",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Abstracts interface to firmata firmware",
 	"main": "lib/ioboard.js",
 	"scripts": {
@@ -11,7 +11,7 @@
 		"url": "git://github.com/achingbrain/node-ioboard.git"
 	},
 	"dependencies": {
-
+		"winston": ">=0.7.2"
 	},
 	"devDependencies": {
 
