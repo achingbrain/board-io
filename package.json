@@ -1,7 +1,7 @@
 {
 	"name": "ioboard",
-	"version": "1.0.1",
-	"description": "Abstracts interface to firmata firmware",
+	"version": "2.0.0",
+	"description": "Provides a standard interface to boards capable of IO (e.g. Arduinos, Maestros, Raspberry Pis, etc) and their firmware",
 	"main": "lib/ioboard.js",
 	"scripts": {
 
