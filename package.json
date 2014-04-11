@@ -1,29 +1,23 @@
 {
-	"name": "ioboard",
-	"version": "2.1.0",
-	"description": "Provides a standard interface to boards capable of IO (e.g. Arduinos, Maestros, Raspberry Pis, etc) and their firmware",
-	"main": "lib/ioboard.js",
-	"scripts": {
-
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/achingbrain/node-ioboard.git"
-	},
-	"dependencies": {
-		"winston": ">=0.7.2"
-	},
-	"devDependencies": {
-
-	},
-	"keywords": [
-		"node",
-		"firmata",
-		"servo",
-		"ssc",
-		"maestro"
-	],
-	"author": "Alex Potsides",
-	"license": "BSD",
-	"readmeFilename": "Readme.md"
+  "name": "ioboard",
+  "version": "3.0.0",
+  "description": "Provides a standard interface to boards capable of IO (e.g. Arduinos, Maestros, Raspberry Pis, etc) and their firmware",
+  "main": "lib/ioboard.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/achingbrain/node-ioboard.git"
+  },
+  "dependencies": {
+    "check-types": "^1.2"
+  },
+  "keywords": [
+    "node",
+    "firmata",
+    "servo",
+    "ssc",
+    "maestro"
+  ],
+  "author": "Alex Potsides",
+  "license": "BSD",
+  "readmeFilename": "Readme.md"
 }
