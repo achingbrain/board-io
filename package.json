@@ -1,11 +1,10 @@
 {
-  "name": "ioboard",
+  "name": "board-io",
   "version": "3.0.0",
   "description": "Provides a standard interface to boards capable of IO (e.g. Arduinos, Maestros, Raspberry Pis, etc) and their firmware",
-  "main": "lib/ioboard.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/achingbrain/node-ioboard.git"
+    "url": "git://github.com/achingbrain/board-io.git"
   },
   "dependencies": {
     "check-types": "^1.2"
@@ -15,7 +14,7 @@
     "firmata",
     "servo",
     "ssc",
-    "maestro"
+    "johnny-five"
   ],
   "author": "Alex Potsides",
   "license": "BSD",

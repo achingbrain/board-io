@@ -1,5 +1,5 @@
 
-# ioboard
+# board-io
 
 An extendable implementation of Johnny Five's [IO Plugins](https://github.com/rwaldron/johnny-five/wiki/IO-Plugins).
 
@@ -11,11 +11,11 @@ E.g.:
 
 ```javascript
 var util = require('util'),
-  IOBoard = require('ioboard');
+  BoardIO = require('board-io');
 
 MyIO = function(path, callback) {
   // call super constructor
-  IOBoard.call(this);
+  BoardIO.call(this);
 
   // connect to hardware and emit "connected" event
   this.emit("connected");
@@ -29,7 +29,7 @@ MyIO = function(path, callback) {
   // finally call the passed callback
   callback();
 }
-util.inherits(IO, IOBoard);
+util.inherits(IO, BoardIO);
 ```
 
 Finally implement any of the IO Plugin methods of your choosing:
@@ -43,17 +43,17 @@ MyIO.prototype.digitalWrite = function(pin, value) {
 
 ## Logging
 
-By default IOBoard will print a message when every non-implemented method is invoked.  To prevent this, set the `quiet` property of the super constructor args to true:
+By default BoardIO will print a message when every non-implemented method is invoked.  To prevent this, set the `quiet` property of the super constructor args to true:
 
 ```javascript
 MyIO = function(path, callback) {
   // call super constructor
-  IOBoard.call(this, {
+  BoardIO.call(this, {
     ..
     quiet: true
   });
 
   ..
 }
-util.inherits(IO, IOBoard);
+util.inherits(IO, BoardIO);
 ```
