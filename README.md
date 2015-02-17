@@ -57,3 +57,14 @@ MyIO = function(path, callback) {
 }
 util.inherits(IO, BoardIO);
 ```
+
+## Changelog
+
+### 3.1.0
+
+1. Adds new i2cXXX methods
+2. Prints deprecation warning when calling old sendI2CXXX methods
+
+### 3.0.0 - Initial release
+
+1. All Firmata methods stubbed out
