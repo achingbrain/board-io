@@ -1,6 +1,6 @@
 {
   "name": "board-io",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Provides a standard interface to boards capable of IO (e.g. Arduinos, Maestros, Raspberry Pis, etc) and their firmware",
   "repository": {
     "type": "git",
