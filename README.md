@@ -17,17 +17,21 @@ MyIO = function(path, callback) {
   // call super constructor
   BoardIO.call(this);
 
-  // connect to hardware and emit "connected" event
-  this.emit("connected");
-
   // .. configure pins
   this._pins.push(..);
-
-  // all done, emit ready event
-  this.emit("ready");
-
-  // finally call the passed callback
-  callback();
+  
+  // wait for an async method or use proccess.nextTick to 
+  // signal events
+  process.nextTick(function() {
+    // connect to hardware and emit "connect" event
+    this.emit("connect");
+  
+    // all done, emit ready event
+    this.emit("ready");
+  
+    // finally call the passed callback
+    callback();
+  }.bind(this));
 }
 util.inherits(IO, BoardIO);
 ```
