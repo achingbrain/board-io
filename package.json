@@ -9,6 +9,11 @@
   "dependencies": {
     "check-types": "^1.2"
   },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-contrib-nodeunit": "~0.4.1"
+  },
   "keywords": [
     "node",
     "firmata",
