@@ -6,13 +6,15 @@
     "type": "git",
     "url": "git://github.com/achingbrain/board-io.git"
   },
+  "scripts": {
+    "lint": "standard"
+  },
   "dependencies": {
     "check-types": "^1.2"
   },
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~0.11.2",
-    "grunt-contrib-nodeunit": "~0.4.1"
+    "pre-commit": "^1.1.2",
+    "standard": "^5.4.1"
   },
   "keywords": [
     "node",
@@ -23,5 +25,7 @@
   ],
   "author": "Alex Potsides",
   "license": "BSD",
-  "readmeFilename": "Readme.md"
+  "pre-commit": [
+    "lint"
+  ]
 }
