@@ -19,16 +19,16 @@ MyIO = function(path, callback) {
 
   // .. configure pins
   this._pins.push(..);
-  
-  // wait for an async method or use proccess.nextTick to 
+
+  // wait for an async method or use proccess.nextTick to
   // signal events
   process.nextTick(function() {
     // connect to hardware and emit "connect" event
     this.emit("connect");
-  
+
     // all done, emit ready event
     this.emit("ready");
-  
+
     // finally call the passed callback
     callback();
   }.bind(this));
@@ -64,7 +64,23 @@ util.inherits(IO, BoardIO);
 
 ## Changelog
 
-### 3.1.0
+### 3.0.5
+
+1. Add serial methods and constants to match firmata
+
+### 3.0.4
+
+1. Actually just configurable
+
+### 3.0.3
+
+1. Make properties configurable and writable
+
+### 3.0.2
+
+1. Define pins and analogPins on initialisation
+
+### 3.0.1
 
 1. Adds new i2cXXX methods
 2. Prints deprecation warning when calling old sendI2CXXX methods
